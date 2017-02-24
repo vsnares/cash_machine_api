@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Coin::KIND_OF_COINS.each do |coin|
+  Coin.create(denomination: coin, quantity: 10)
+end
